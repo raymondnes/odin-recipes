@@ -37,10 +37,23 @@ h1
 
 img 
 {
-    border-radius: 6%;
+    border-radius: 50%;
     margin: 50px;
     height: auto;
-    width: 600px;
+    width: 300px;
+    animation: animate 100s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+
 }
 
 .salad_description
@@ -91,29 +104,5 @@ ol
     background: rgba(255, 145, 0, 0.308);
 }
 
-div .images
-{
-    display: flex-box;
-    justify-content: space-between;
-    padding-left: auto; 
-    padding-right: auto;
-    margin: 5px 165px;
-    align-self: center;
-    border-radius: 50%;
-    height: auto;
-    width: 320px;
-    animation: animate 20s linear infinite;
-}
-@keyframes animate
-{
-    0%
-    {
-        transform: rotate(0deg);
-    }
-    100%
-    {
-        transform: rotate(360deg);
-    }
 
-}
 
